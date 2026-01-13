@@ -94,11 +94,57 @@
     a:hover {
       border-bottom: 1px solid #2b2b2b;
     }
+
+    .side-ornament {
+  position: absolute;
+  top: 3rem;
+  bottom: 3rem;
+  width: 40px;
+}
+
+.side-ornament.left {
+  left: -50px;
+}
+
+.side-ornament.right {
+  right: -50px;
+  transform: scaleX(-1);
+}
+
   </style>
 </head>
 <body>
 
   <div class="page">
+    
+<svg class="side-ornament left" viewBox="0 0 100 400" aria-hidden="true">
+  <path d="M50 10
+           C35 40, 35 80, 50 110
+           C65 140, 65 180, 50 210
+           C35 240, 35 280, 50 310
+           C65 340, 65 380, 50 390"
+        fill="none"
+        stroke="#c2bcae"
+        stroke-width="2"/>
+  <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
+  <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
+  <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
+  
+</svg>
+
+<svg class="side-ornament right" viewBox="0 0 100 400" aria-hidden="true">
+  <path d="M50 10
+           C35 40, 35 80, 50 110
+           C65 140, 65 180, 50 210
+           C35 240, 35 280, 50 310
+           C65 340, 65 380, 50 390"
+        fill="none"
+        stroke="#c2bcae"
+        stroke-width="2"/>
+  <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
+  <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
+  <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
+</svg>
 
     <header>
       <h1>Salon de Conversation</h1>
