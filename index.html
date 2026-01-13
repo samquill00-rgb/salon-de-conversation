@@ -18,9 +18,11 @@
     .page {
       max-width: 700px;
       margin: 3rem auto;
-      padding: 3rem 2rem;
+      padding: 3rem 3.5rem;
       background-color: #fffdf8;
       border: 1px solid #d6d2c9;
+      position: relative; /* IMPORTANT */
+      overflow: visible;
     }
 
     header {
@@ -65,8 +67,6 @@
     }
 
     .item-title {
-      display: flex;
-      justify-content: space-between;
       font-weight: 700;
     }
 
@@ -95,56 +95,56 @@
       border-bottom: 1px solid #2b2b2b;
     }
 
+    /* SIDE ORNAMENTS */
     .side-ornament {
-  position: absolute;
-  top: 3rem;
-  bottom: 3rem;
-  width: 40px;
-}
+      position: absolute;
+      top: 3rem;
+      bottom: 3rem;
+      width: 32px;
+      pointer-events: none;
+    }
 
-.side-ornament.left {
-  left: -50px;
-}
+    .side-ornament.left {
+      left: -42px;
+    }
 
-.side-ornament.right {
-  right: -50px;
-  transform: scaleX(-1);
-}
-
+    .side-ornament.right {
+      right: -42px;
+      transform: scaleX(-1);
+    }
   </style>
 </head>
 <body>
 
   <div class="page">
-    
-<svg class="side-ornament left" viewBox="0 0 100 400" aria-hidden="true">
-  <path d="M50 10
-           C35 40, 35 80, 50 110
-           C65 140, 65 180, 50 210
-           C35 240, 35 280, 50 310
-           C65 340, 65 380, 50 390"
-        fill="none"
-        stroke="#c2bcae"
-        stroke-width="2"/>
-  <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
-  <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
-  <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
-  
-</svg>
 
-<svg class="side-ornament right" viewBox="0 0 100 400" aria-hidden="true">
-  <path d="M50 10
-           C35 40, 35 80, 50 110
-           C65 140, 65 180, 50 210
-           C35 240, 35 280, 50 310
-           C65 340, 65 380, 50 390"
-        fill="none"
-        stroke="#c2bcae"
-        stroke-width="2"/>
-  <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
-  <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
-  <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
-</svg>
+    <svg class="side-ornament left" viewBox="0 0 100 400" aria-hidden="true">
+      <path d="M50 10
+               C35 40, 35 80, 50 110
+               C65 140, 65 180, 50 210
+               C35 240, 35 280, 50 310
+               C65 340, 65 380, 50 390"
+            fill="none"
+            stroke="#c2bcae"
+            stroke-width="2"/>
+      <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
+      <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
+      <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
+    </svg>
+
+    <svg class="side-ornament right" viewBox="0 0 100 400" aria-hidden="true">
+      <path d="M50 10
+               C35 40, 35 80, 50 110
+               C65 140, 65 180, 50 210
+               C35 240, 35 280, 50 310
+               C65 340, 65 380, 50 390"
+            fill="none"
+            stroke="#c2bcae"
+            stroke-width="2"/>
+      <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
+      <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
+      <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
+    </svg>
 
     <header>
       <h1>Salon de Conversation</h1>
@@ -153,72 +153,18 @@
 
     <div class="rule">— ✦ —</div>
 
-    <section id="introduction">
+    <section>
       <h2>Présentation</h2>
-
       <div class="item">
-        <div class="item-title">
-          <span>Le Salon</span>
-        </div>
+        <div class="item-title">Le Salon</div>
         <div class="item-desc">
-          A revival of the literary salon: conversation as a craft, pursued slowly and in good faith, inspired by eighteenth- and nineteenth-century Paris.
+          A revival of the literary salon: conversation as a craft, pursued slowly and in good faith.
         </div>
       </div>
-
       <div class="item">
-        <div class="item-title">
-          <span>L’Esprit</span>
-        </div>
+        <div class="item-title">L’Esprit</div>
         <div class="item-desc">
-          Neither lecture nor debate, but attentive dialogue—civil, reflective, and exacting.
-        </div>
-      </div>
-    </section>
-
-    <div class="rule">— ✦ —</div>
-
-    <section id="about">
-      <h2>À la Carte</h2>
-
-      <div class="item">
-        <div class="item-title">
-          <span>Conversation privée</span>
-        </div>
-        <div class="item-desc">
-          One-to-one conversations, carefully prepared and shaped around shared intellectual interests.
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-title">
-          <span>Table choisie</span>
-        </div>
-        <div class="item-desc">
-          Small-group salons focused on literature, philosophy, politics, art, and the interior life.
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-title">
-          <span>Conversation guidée</span>
-        </div>
-        <div class="item-desc">
-          Moderated exchanges with themes, texts, or questions agreed in advance.
-        </div>
-      </div>
-    </section>
-
-    <div class="rule">— ✦ —</div>
-
-    <section id="contact">
-      <h2>Réservations & Correspondance</h2>
-
-      <div class="item">
-        <div class="item-title">
-          <span>Contact</span>
-        </div>
-        <div class="item-desc">
-          Email: <a href="mailto:youremail@example.com">youremail@example.com</a>
+          Neither lecture nor debate, but attentive dialogue—civil, reflective, exacting.
         </div>
       </div>
     </section>
@@ -231,4 +177,3 @@
 
 </body>
 </html>
-
