@@ -13,6 +13,7 @@
       background-color: #f7f4ef;
       color: #2b2b2b;
       line-height: 1.6;
+      text-align: center; /* center all text by default */
     }
 
     .page {
@@ -21,11 +22,10 @@
       padding: 3rem 3.5rem;
       background-color: #fffdf8;
       border: 1px solid #d6d2c9;
-      position: relative; /* anchor ornaments */
+      position: relative;
       overflow: visible;
     }
 
-    /* SIDE SVG ORNAMENTS */
     .side-ornament {
       position: absolute;
       top: 3rem;
@@ -34,22 +34,14 @@
       pointer-events: none;
     }
 
-    .side-ornament.left {
-      left: -42px;
-    }
-
-    .side-ornament.right {
-      right: -42px;
-      transform: scaleX(-1);
-    }
+    .side-ornament.left { left: -42px; }
+    .side-ornament.right { right: -42px; transform: scaleX(-1); }
 
     header {
-      text-align: center;
       margin-bottom: 3rem;
       position: relative;
     }
 
-    /* Fine vertical rules beside header */
     header::before,
     header::after {
       content: "";
@@ -78,14 +70,11 @@
     }
 
     .rule {
-      text-align: center;
       margin: 2.5rem 0;
       color: #999;
     }
 
-    section {
-      margin-bottom: 3rem;
-    }
+    section { margin-bottom: 3rem; }
 
     section h2 {
       font-family: 'Playfair Display', serif;
@@ -95,14 +84,8 @@
       margin-bottom: 1rem;
     }
 
-    .item {
-      margin-bottom: 1.4rem;
-    }
-
-    .item-title {
-      font-weight: 700;
-    }
-
+    .item { margin-bottom: 1.4rem; }
+    .item-title { font-weight: 700; }
     .item-desc {
       font-style: italic;
       color: #555;
@@ -113,7 +96,6 @@
       margin-top: 4rem;
       padding-top: 2rem;
       border-top: 1px solid #d6d2c9;
-      text-align: center;
       font-size: 0.9rem;
       color: #555;
     }
@@ -124,9 +106,9 @@
       border-bottom: 1px dotted #999;
     }
 
-    a:hover {
-      border-bottom: 1px solid #2b2b2b;
-    }
+    a:hover { border-bottom: 1px solid #2b2b2b; }
+
+    .item-desc p { margin: 0.5em 0; } /* extra spacing for paragraphs inside item-desc */
   </style>
 </head>
 <body>
@@ -135,8 +117,7 @@
 
     <!-- LEFT ORNAMENT -->
     <svg class="side-ornament left" viewBox="0 0 100 400" aria-hidden="true">
-      <path d="M50 10 C35 40, 35 80, 50 110 C65 140, 65 180, 50 210 C35 240, 35 280, 50 310 C65 340, 65 380, 50 390"
-            fill="none" stroke="#c2bcae" stroke-width="2"/>
+      <path d="M50 10 C35 40, 35 80, 50 110 C65 140, 65 180, 50 210 C35 240, 35 280, 50 310 C65 340, 65 380, 50 390" fill="none" stroke="#c2bcae" stroke-width="2"/>
       <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
       <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
       <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
@@ -144,8 +125,7 @@
 
     <!-- RIGHT ORNAMENT -->
     <svg class="side-ornament right" viewBox="0 0 100 400" aria-hidden="true">
-      <path d="M50 10 C35 40, 35 80, 50 110 C65 140, 65 180, 50 210 C35 240, 35 280, 50 310 C65 340, 65 380, 50 390"
-            fill="none" stroke="#c2bcae" stroke-width="2"/>
+      <path d="M50 10 C35 40, 35 80, 50 110 C65 140, 65 180, 50 210 C35 240, 35 280, 50 310 C65 340, 65 380, 50 390" fill="none" stroke="#c2bcae" stroke-width="2"/>
       <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
       <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
       <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
@@ -164,22 +144,20 @@
       <div class="item">
         <div class="item-title">Le Salon</div>
         <div class="item-desc">
-          'I wish you'd have been my tutor when I was young';<br> 'I wish I could be a fly-on-the-wall in your classes'.<br>
-          I hear this sort of thing often. <br>
-          There are many intellectuals in the world who simply weren't given the chance and the time they needed.<br>
-          Perhaps they had children to care for, or a career which took them away from their academic studies.<br>
-          Others wish they not done Law, or English, or History, or Philosophy, but instead had done History, Philosophy, Law or English.<br>
-
-
-          
-           evival of the literary salon: conversation as a craft, pursued slowly and in good faith, inspired by eighteenth- and nineteenth-century Paris.
+          <p>'I wish you'd have been my tutor when I was young'; 'I wish I could be a fly-on-the-wall in your classes'.</p>
+          <p>I hear this sort of thing often. There are many intellectuals in the world who simply weren't given the chance and the time they needed.</p>
+          <p>Perhaps they had children to care for, or a career which took them away from their academic studies.</p>
+          <p>Others wish they had not done Law, or English, or History, or Philosophy, but instead had done History, Philosophy, Law, or English.</p>
+          <p>A revival of the literary salon: conversation as a craft, pursued slowly and in good faith, inspired by eighteenth- and nineteenth-century Paris.</p>
         </div>
       </div>
 
       <div class="item">
         <div class="item-title">L’Esprit</div>
         <div class="item-desc">
-          We shall talk, talk, talk; we shall dispute and wonder. I will bring you texts, old and new, some of which you might know well, or half-remember, and some of which will be entirely unfamiliar, drawn from the perculiar store of my own years of study. Most of all we will seek, together, to make sense of the world, as we find it now, in the context of the truth and the beauty of things past.
+          <p>We shall talk, talk, talk; we shall dispute and wonder.</p>
+          <p>I will bring you texts, old and new, some of which you might know well, or half-remember, and some of which will be entirely unfamiliar, drawn from the peculiar store of my own years of study.</p>
+          <p>Most of all we will seek, together, to make sense of the world, as we find it now, in the context of the truth and the beauty of things past.</p>
         </div>
       </div>
     </section>
@@ -192,21 +170,21 @@
       <div class="item">
         <div class="item-title">Conversation privée</div>
         <div class="item-desc">
-          One-to-one conversations, carefully prepared and shaped around shared intellectual interests.
+          <p>One-to-one conversations, carefully prepared and shaped around shared intellectual interests.</p>
         </div>
       </div>
 
       <div class="item">
         <div class="item-title">Table choisie</div>
         <div class="item-desc">
-          Small-group salons focused on literature, philosophy, politics, art, and the interior life.
+          <p>Small-group salons focused on literature, philosophy, politics, art, and the interior life.</p>
         </div>
       </div>
 
       <div class="item">
         <div class="item-title">Conversation guidée</div>
         <div class="item-desc">
-          Moderated exchanges with themes, texts, or questions agreed in advance.
+          <p>Moderated exchanges with themes, texts, or questions agreed in advance.</p>
         </div>
       </div>
     </section>
@@ -219,7 +197,7 @@
       <div class="item">
         <div class="item-title">Contact</div>
         <div class="item-desc">
-          Email: <a href="mailto:youremail@example.com">youremail@example.com</a>
+          <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
         </div>
       </div>
     </section>
