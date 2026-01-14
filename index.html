@@ -14,7 +14,7 @@
       color: #2b2b2b;
       line-height: 1.6;
       text-align: center;
-      font-size: 1.15rem; /* increased text size */
+      font-size: 1.15rem;
     }
 
     .page {
@@ -24,7 +24,6 @@
       background-color: #fffdf8;
       border: 1px solid #d6d2c9;
       position: relative;
-      overflow: visible;
     }
 
     .side-ornament {
@@ -58,7 +57,7 @@
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.7rem; /* slightly bigger */
+      font-size: 2.7rem;
       margin: 0;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -68,38 +67,35 @@
       margin-top: 0.8rem;
       font-style: italic;
       color: #555;
-      font-size: 1.2rem; /* slightly bigger */
+      font-size: 1.2rem;
     }
 
-    .rule {
-      margin: 2.5rem 0;
-      color: #999;
-    }
+    .rule { margin: 2.5rem 0; color: #999; }
 
     section { margin-bottom: 3rem; }
 
     section h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.5rem; /* slightly bigger */
+      font-size: 1.5rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       margin-bottom: 1rem;
     }
 
-    .item { margin-bottom: 1.4rem; }
-    .item-title { font-weight: 700; font-size: 1.3rem; } /* bigger */
+    .item { margin-bottom: 2rem; text-align: left; }
+    .item-title { font-weight: 700; font-size: 1.3rem; margin-bottom: 0.3rem; }
     .item-desc {
       font-style: italic;
       color: #555;
-      margin-top: 0.3rem;
-      font-size: 1.15rem; /* bigger */
+      font-size: 1.15rem;
     }
+    .item-desc p { margin: 0.5em 0; }
 
     footer {
       margin-top: 4rem;
       padding-top: 2rem;
       border-top: 1px solid #d6d2c9;
-      font-size: 1.05rem; /* slightly bigger */
+      font-size: 1.05rem;
       color: #555;
     }
 
@@ -110,110 +106,124 @@
     }
 
     a:hover { border-bottom: 1px solid #2b2b2b; }
-
-    .item-desc p { margin: 0.5em 0; }
   </style>
 </head>
 <body>
 
-  <div class="page">
+<div class="page">
 
-    <svg class="side-ornament left" viewBox="0 0 100 400" aria-hidden="true">
-      <path d="M50 10 C35 40, 35 80, 50 110 C65 140, 65 180, 50 210 C35 240, 35 280, 50 310 C65 340, 65 380, 50 390" fill="none" stroke="#c2bcae" stroke-width="2"/>
-      <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
-      <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
-      <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
-    </svg>
+  <svg class="side-ornament left" viewBox="0 0 100 400" aria-hidden="true">
+    <path d="M50 10 C35 40, 35 80, 50 110 C65 140, 65 180, 50 210 C35 240, 35 280, 50 310 C65 340, 65 380, 50 390" fill="none" stroke="#c2bcae" stroke-width="2"/>
+    <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
+    <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
+    <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
+  </svg>
 
-    <svg class="side-ornament right" viewBox="0 0 100 400" aria-hidden="true">
-      <path d="M50 10 C35 40, 35 80, 50 110 C65 140, 65 180, 50 210 C35 240, 35 280, 50 310 C65 340, 65 380, 50 390" fill="none" stroke="#c2bcae" stroke-width="2"/>
-      <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
-      <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
-      <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
-    </svg>
+  <svg class="side-ornament right" viewBox="0 0 100 400" aria-hidden="true">
+    <path d="M50 10 C35 40, 35 80, 50 110 C65 140, 65 180, 50 210 C35 240, 35 280, 50 310 C65 340, 65 380, 50 390" fill="none" stroke="#c2bcae" stroke-width="2"/>
+    <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
+    <circle cx="50" cy="210" r="4" fill="#c2bcae"/>
+    <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
+  </svg>
 
-    <header>
-      <h1>Salon de Conversation</h1>
-      <p>with your host, Dr. Sam Quill</p>
-    </header>
+  <header>
+    <h1>Salon de Conversation</h1>
+    <p>with your host, Dr. Sam Quill</p>
+  </header>
 
-    <div class="rule">— ✦ —</div>
+  <div class="rule">— ✦ —</div>
 
-    <section id="introduction">
-      <h2>Présentation</h2>
+  <section id="introduction">
+    <h2>Présentation</h2>
 
-      <div class="item">
-        <div class="item-title">Le Salon</div>
-        <div class="item-desc">
-          <p>'I wish you'd have been my tutor when I was young.'</p>
-          <p>'I wish I could be a fly-on-the-wall in your classes.'</p>
-          <p>There are many reasons why people want to learn more.</p>
-          <p>The world is full of intellectuals without enough time.</p>
-
-          <div class="rule">— ✦ —</div>
-
-          <p>Perhaps there are children to care for, or a career which took you away from your academic studies. Perhaps you studied Law, English, History or Philosophy, and wish you had studied History, Philosophy, Law or English. Perhaps you've spent years mastering a fiendish subject and want only an intelligent peer to go with you, through the unfamiliar.</p>
-        </div>
+    <div class="item">
+      <div class="item-title">Le Salon</div>
+      <div class="item-desc">
+        <p>'I wish you'd have been my tutor when I was young.'</p>
+        <p>'I wish I could be a fly-on-the-wall in your classes.'</p>
+        <p>There are many reasons why people want to learn more.</p>
+        <p>The world is full of intellectuals without enough time.</p>
+        <div class="rule">— ✦ —</div>
+        <p>Perhaps there are children to care for, or a career which took you away from your academic studies. Perhaps you studied Law, English, History or Philosophy, and wish you had studied History, Philosophy, Law or English. Perhaps you've spent years mastering a fiendish subject and want only an intelligent peer to go with you, through the unfamiliar.</p>
       </div>
+    </div>
 
-      <div class="item">
-        <div class="item-title">L’Esprit</div>
-        <div class="item-desc">
-          <p>We shall talk, talk, talk; we shall dispute and wonder.</p>
-          <p>I will bring you texts, old and new, some of which you might know well, or half-remember, and some of which will be entirely unfamiliar, drawn from the peculiar store of my years of study.</p>
-          <p>Most of all we will seek, together, to make sense of the world, as we find it now, in the context of the truth and beauty of things past.</p>
-          <p><strong>The 'salon' is a French tradition, which began in the 17th century, where artists, writers, intellectuals and the otherwise curious met in private homes to talk about literature and philosophy and to enjoy good conversation. My version of the salon desires to continue the tradition.</strong></p>
-        </div>
+    <div class="item">
+      <div class="item-title">L’Esprit</div>
+      <div class="item-desc">
+        <p>We shall talk, talk, talk; we shall dispute and wonder.</p>
+        <p>I will bring you texts, old and new, some of which you might know well, or half-remember, and some of which will be entirely unfamiliar, drawn from the peculiar store of my years of study.</p>
+        <p>Most of all we will seek, together, to make sense of the world, as we find it now, in the context of the truth and beauty of things past.</p>
+        <p><strong>The 'salon' is a French tradition, which began in the 17th century, where artists, writers, intellectuals and the otherwise curious met in private homes to talk about literature and philosophy and to enjoy good conversation. My version of the salon desires to continue the tradition.</strong></p>
       </div>
-    </section>
+    </div>
 
-    <div class="rule">— ✦ —</div>
+  </section>
 
-    <section id="about">
-      <h2>À la Carte</h2>
+  <div class="rule">— ✦ —</div>
 
-      <div class="item">
-        <div class="item-title">Conversation privée</div>
-        <div class="item-desc">
-          <p>One-to-one conversations, catered to your specific intellectual interests. £75 per h.</p>
-        </div>
+  <section id="about">
+    <h2>À la Carte</h2>
+
+    <div class="item">
+      <div class="item-title">Conversation privée</div>
+      <div class="item-desc">
+        <p>One-to-one conversations, catered to your specific intellectual interests. £75 per h.</p>
       </div>
+    </div>
 
-      <div class="item">
-        <div class="item-title">Table choisie</div>
-        <div class="item-desc">
-          <p>Small-group salons focused on literature, philosophy, politics, art and history. We could think about how the things we study might speak to our modern hearts, or else how they shape the terrain of the 21st Century, in the broadest, most abstract terms, in geopolitics and philosophy. These sessions are designed for groups of friends to come and speak together, guided and informed by someone who can help you to structure and direct your conversations. (For two people: £40 p.p./per h., for three or more £35 p.p./per h.)</p>
-        </div>
+    <div class="item">
+      <div class="item-title">Table choisie</div>
+      <div class="item-desc">
+        <p>Small-group salons focused on literature, philosophy, politics, art and history. These sessions are designed for groups of friends to come and speak together, guided by someone who can help structure and direct your conversations.</p>
+        <p>For two people: £40 p.p./per h., for three or more: £35 p.p./per h.</p>
       </div>
+    </div>
 
-      <div class="item">
-        <div class="item-title">La spécialité de la maison</div>
-        <div class="item-desc">
-          <p>I will guide you through the literature, history, philosophy and theology of the Anglophone World (and beyond it, when that's required). The course begins with the earliest account of Britain (Pytheas of Massalia) and works onwards to the present, at your own pace. (Though, of course, we can begin whenever you'd be most interested in beginning.)</p>
-          <p>Topics might include: post-Roman Anglo-Saxon poetry; the Viking invasion and the making of England; the tradition of courtly verse in Mediaeval Scots; Chaucer; the Arthurian legends; the Renaissance in various forms; early-modern drama (Shakespeare & Co.); the Reformation and the English Civil Wars (from both political and theological perspectives); John Milton, Thomas Hobbes and the 17th Century crisis of free speech; Neoclassicism; Jonathan Swift, Alexander Pope (their flaws and perfections); David Hume, radical conservatism and the breakdown of the Enlightenment mind; the invention of Gothic; pre-Romantic madness (Christopher Smart and William Blake), Romantic Madness (Lord Byron and Percy Bysshe Shelley); the influence of post-Kantian philosophy on Romantic art; the reality of the novel; medievalism in the artwork of 19th Century socialists; Ceremonial Magic (W. B. Yeats, Aleister Crowley and the erotics of form); 'How do we solve a problem like Ezra Pound?' etc. £75 per h.</p>
-        </div>
+    <div class="item">
+      <div class="item-title">La spécialité de la maison</div>
+      <div class="item-desc">
+        <p>I will guide you through the literature, history, philosophy and theology of the Anglophone World (and beyond it, when that's required). The course begins with the earliest account of Britain (Pytheas of Massalia) and works onwards to the present, at your own pace. (Though, of course, we can begin whenever you'd be most interested in beginning.)</p>
+        <p>Topics might include:</p>
+        <ul style="text-align:left;">
+          <li>Post-Roman Anglo-Saxon poetry</li>
+          <li>The Viking invasion and the making of England</li>
+          <li>The tradition of courtly verse in Mediaeval Scots</li>
+          <li>Chaucer and the Arthurian legends</li>
+          <li>The Renaissance in various forms</li>
+          <li>Early-modern drama (Shakespeare & Co.)</li>
+          <li>The Reformation and the English Civil Wars</li>
+          <li>John Milton, Thomas Hobbes and the 17th Century crisis of free speech</li>
+          <li>Neoclassicism, Jonathan Swift, Alexander Pope</li>
+          <li>David Hume and the breakdown of the Enlightenment mind</li>
+          <li>The invention of Gothic; Romantic madness (Byron, Shelley)</li>
+          <li>Ceremonial Magic (Yeats, Crowley, and the erotics of form)</li>
+          <li>'How do we solve a problem like Ezra Pound?'</li>
+        </ul>
+        <p>£75 per h.</p>
       </div>
+    </div>
 
-    </section>
+  </section>
 
-    <div class="rule">— ✦ —</div>
+  <div class="rule">— ✦ —</div>
 
-    <section id="contact">
-      <h2>Réservations & Correspondance</h2>
+  <section id="contact">
+    <h2>Réservations & Correspondance</h2>
 
-      <div class="item">
-        <div class="item-title">Contact</div>
-        <div class="item-desc">
-          <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        </div>
+    <div class="item">
+      <div class="item-title">Contact</div>
+      <div class="item-desc">
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <p>Dr. Sam Quill · Salon de Conversation</p>
-    </footer>
+  <footer>
+    <p>Dr. Sam Quill · Salon de Conversation</p>
+  </footer>
 
-  </div>
+</div>
 
 </body>
 </html>
