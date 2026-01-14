@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -106,12 +106,19 @@
     }
 
     a:hover { border-bottom: 1px solid #2b2b2b; }
+
+    .item-desc ul {
+      list-style-position: inside;
+      padding-left: 0;
+      margin: 0.5em 0;
+    }
   </style>
 </head>
 <body>
 
 <div class="page">
 
+  <!-- Side Ornaments -->
   <svg class="side-ornament left" viewBox="0 0 100 400" aria-hidden="true">
     <path d="M50 10 C35 40, 35 80, 50 110 C65 140, 65 180, 50 210 C35 240, 35 280, 50 310 C65 340, 65 380, 50 390" fill="none" stroke="#c2bcae" stroke-width="2"/>
     <circle cx="50" cy="110" r="4" fill="#c2bcae"/>
@@ -126,6 +133,7 @@
     <circle cx="50" cy="310" r="4" fill="#c2bcae"/>
   </svg>
 
+  <!-- Header -->
   <header>
     <h1>Salon de Conversation</h1>
     <p>with your host, Dr. Sam Quill</p>
@@ -133,8 +141,9 @@
 
   <div class="rule">— ✦ —</div>
 
+  <!-- Introduction -->
   <section id="introduction">
-    <h2>Présentation</h2>
+    <h2>PRÉSENTATION</h2>
 
     <div class="item">
       <div class="item-title">Le Salon</div>
@@ -143,7 +152,6 @@
         <p>'I wish I could be a fly-on-the-wall in your classes.'</p>
         <p>There are many reasons why people want to learn more.</p>
         <p>The world is full of intellectuals without enough time.</p>
-        <div class="rule">— ✦ —</div>
         <p>Perhaps there are children to care for, or a career which took you away from your academic studies. Perhaps you studied Law, English, History or Philosophy, and wish you had studied History, Philosophy, Law or English. Perhaps you've spent years mastering a fiendish subject and want only an intelligent peer to go with you, through the unfamiliar.</p>
       </div>
     </div>
@@ -162,6 +170,7 @@
 
   <div class="rule">— ✦ —</div>
 
+  <!-- À la Carte -->
   <section id="about">
     <h2>À la Carte</h2>
 
@@ -185,7 +194,7 @@
       <div class="item-desc">
         <p>I will guide you through the literature, history, philosophy and theology of the Anglophone World (and beyond it, when that's required). The course begins with the earliest account of Britain (Pytheas of Massalia) and works onwards to the present, at your own pace. (Though, of course, we can begin whenever you'd be most interested in beginning.)</p>
         <p>Topics might include:</p>
-        <ul style="text-align:left;">
+        <ul>
           <li>Post-Roman Anglo-Saxon poetry</li>
           <li>The Viking invasion and the making of England</li>
           <li>The tradition of courtly verse in Mediaeval Scots</li>
@@ -208,6 +217,7 @@
 
   <div class="rule">— ✦ —</div>
 
+  <!-- Contact -->
   <section id="contact">
     <h2>Réservations & Correspondance</h2>
 
@@ -219,6 +229,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>Dr. Sam Quill · Salon de Conversation</p>
   </footer>
